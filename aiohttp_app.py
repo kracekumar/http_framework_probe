@@ -102,7 +102,7 @@ def update_external_systems(data):
 @asyncio.coroutine
 def get_engine():
     #print("Get engine")
-    engine = yield from create_engine(user='krace',
+    engine = yield from create_engine(user='postgres',
                                       database='http_framework_probe',
                                       host='127.0.0.1',
                                       password='')
